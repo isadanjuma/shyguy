@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 25, 0);
+ }
+ 
+.container {
+    background-color: hsl(0, 2%, 17%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    animation: 4s circle linear infinite;
+
+}
+
+ img {
+        width: 120px;
+        border-radius: 50%;
+        margin: 15p 0px;
+        animation: image 3s linear infinite;
+    }
+    @keyframes image {
+     0% {  
+        transform: rotate(0deg);
+        }
+    
+   100% { 
+      transform: rotate(360deg)
+      
+    }
+}
+ h1{
+    font-size: 27px;
+ }
+h3{
+    font-size: 20px;
+    color: hsl(75, 94%, 57%);
+    margin: 10px 0px;
+}
+p {
+font-size: 20px;
+margin: 35px;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+
+}
+button {
+    padding: 12px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    animation: martin 2s linear infinite;
+    font-weight: 600;
+}
+@keyframes martin {
+    0% 
+    
+    {
+        background-color: red;
+} 
+50% {
+    background-color: yellowgreen;
+}
+100% {
+    background-color: blue;
+ }
+}
+
+button:hover {
+    background-color: hsl(75, 94%, 57%);
+}
